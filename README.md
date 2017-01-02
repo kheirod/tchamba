@@ -49,10 +49,14 @@ Import **tchamba** in your python file and use any of the functions :
     person = random_fake_person()
     for i in person:
         print i, person[i]
-
+   
+    
     # Get a random football team (Internet connection needed)
     football_team = random_football_team()
     
+    #Get a random country and city  (ex : Iraq Basra ) (Internet connection needed)
+    print random_country_and_city()
+     
 ```
 
 ## Contributing
