@@ -68,3 +68,13 @@ def random_football_team():
     except Exception:
         football_team = ""
     return football_team
+
+def random_country_and_city():
+    try :
+          pays = requests.get('https://raw.githubusercontent.com/David-Haim/CountriesToCitiesJSON/master/countriesToCities.json').json()
+          key=random.choice(pays.keys())
+          value=pays[key]
+          pays=0
+    except Exception:
+        key,value = 0,0
+    return key , random.choice(value)
